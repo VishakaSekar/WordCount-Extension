@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <mkdir dir="/Users/vishaka.sekar/AppDynamics/WordCountExtension/target/WordCounter"/>
+  <copy todir="/Users/vishaka.sekar/AppDynamics/WordCountExtension/target/WordCounter">
+    <fileset includes="config.yml" dir="src/main/resources/conf"/>
+  </copy>
+  <copy todir="/Users/vishaka.sekar/AppDynamics/WordCountExtension/target/WordCounter">
+    <fileset includes="monitor.xml" dir="src/main/resources/conf"/>
+  </copy>
+  <copy todir="/Users/vishaka.sekar/AppDynamics/WordCountExtension/target/WordCounter">
+    <fileset includes="WordCountExtension.jar" dir="/Users/vishaka.sekar/AppDynamics/WordCountExtension/target"/>
+  </copy>
+  <zip destfile="/Users/vishaka.sekar/AppDynamics/WordCountExtension/target/WordCounter-2.1.zip">
+    <zipfileset prefix="WordCounter/" filemode="755" dir="/Users/vishaka.sekar/AppDynamics/WordCountExtension/target/WordCounter"/>
+  </zip>
+  <delete dir="/Users/vishaka.sekar/AppDynamics/WordCountExtension/target/WordCounter"/>
+</target>
+</project>
