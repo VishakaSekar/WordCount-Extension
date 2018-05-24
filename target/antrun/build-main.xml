@@ -11,7 +11,7 @@
   <copy todir="/Users/vishaka.sekar/AppDynamics/WordCountExtension/target/WordCounter">
     <fileset includes="WordCountExtension.jar" dir="/Users/vishaka.sekar/AppDynamics/WordCountExtension/target"/>
   </copy>
-  <zip destfile="/Users/vishaka.sekar/AppDynamics/WordCountExtension/target/WordCounter-2.1.zip">
+  <zip destfile="/Users/vishaka.sekar/AppDynamics/WordCountExtension/target/WordCounter-3.0.zip">
     <zipfileset prefix="WordCounter/" filemode="755" dir="/Users/vishaka.sekar/AppDynamics/WordCountExtension/target/WordCounter"/>
   </zip>
   <delete dir="/Users/vishaka.sekar/AppDynamics/WordCountExtension/target/WordCounter"/>

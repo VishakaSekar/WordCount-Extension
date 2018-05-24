@@ -1,2 +1,9 @@
-properties:
-    -filePath: "/Users/vishaka.sekar/AppDynamics/Sample.txt"
+numberOfThreads: 10
+
+files:
+    - filePath: "/Users/vishaka.sekar/AppDynamics/Sample1.txt"
+      fileName: "A"
+    - filePath: "/Users/vishaka.sekar/AppDynamics/Sample2.txt"
+      fileName: "B"
+
+

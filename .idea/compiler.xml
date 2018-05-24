@@ -9,8 +9,5 @@
         <module name="WordCountExtension" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="WordCountExtension" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>
