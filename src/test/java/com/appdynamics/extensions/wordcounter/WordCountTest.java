@@ -26,6 +26,7 @@ public class WordCountTest {
         ArgumentCaptor<List> arguments = ArgumentCaptor.forClass(List.class);
         verify(metricWriteHelper).transformAndPrintMetrics(arguments.capture());
 
+        assertThat(arguments.getAllValues(), hasSize(1));
         for(List<Metric> list : arguments.getAllValues()){
             for(Metric metric: list) {
                 org.junit.Assert.assertTrue(metric.getMetricName().contains("The"));
@@ -34,7 +35,7 @@ public class WordCountTest {
 
         }
 
-        assertThat(arguments.getAllValues(), hasSize(1));
+
 
 
 
